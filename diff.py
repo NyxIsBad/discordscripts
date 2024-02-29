@@ -3,6 +3,10 @@ import csv
 import re
 # pandas for csv handling
 import pandas as pd
+# tqdm for progress bar
+from tqdm import tqdm
+# fileinput for find and replace
+import fileinput
 # cl arguments
 import argparse
 
@@ -11,8 +15,9 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', default='classesjs.diff', help='Input filename. Default: classesjs.diff')
 parser.add_argument('--output', default='classes_mapping.csv', help='Output filename. Default: classes_mapping.csv')
-parser.add_argument('--diffoutput', default=None, help='Generate diff file. Input a file name. Default: None')
-parser.add_argument('--syndi', default=False, help='Decide whether or not to format the diffoutput as a SyndiShanX input file. Default: False')
+parser.add_argument('--diff_output', default=None, help='Generate diff file. Input a file name. Default: None')
+parser.add_argument('--syndi', default=False, help='Decide whether or not to format the diff_output as a SyndiShanX input file. Default: False')
+parser.add_argument('--replace', default=None, help='Auto Update a file. Input a file name. Default: None')
 
 # Parse command line arguments
 args = parser.parse_args()
@@ -20,8 +25,9 @@ args = parser.parse_args()
 # Get input and output filenames from command line arguments
 diff_input = args.input
 csv_output = args.output
-diffoutput = args.diffoutput
-syndioutput = args.syndi
+diff_output = args.diff_output
+flag_syndi = args.syndi
+replace_input = args.replace
 
 # Function relevant vars
 # Delimiter for csv interpretation
@@ -93,9 +99,9 @@ def diff():
     # load csv to df
     df = load_csv(csv_output)
     # open the diff file
-    with open(diffoutput, 'w') as f:
+    with open(diff_output, 'w') as f:
         # make check here instead of later for efficiency
-        if syndioutput:
+        if flag_syndi:
             for index, row in df.iterrows():
                 if row['class_old'] != '$NOTFOUND$' and row['class_new'] != '$NOTFOUND$':
                     f.write(f"{row['class_old']}\n{row['class_new']}\n")
@@ -104,10 +110,32 @@ def diff():
                 if row['class_old'] != '$NOTFOUND$' and row['class_new'] != '$NOTFOUND$':
                     f.write(f"-{row['class_old']}\n+{row['class_new']}\n")
 
+def find_and_replace():
+    # load csv to df
+    df = load_csv(csv_output)
+    replace_dict = dict(zip(df['class_old'], df['class_new']))
+    # count lines for progress bar lol
+    with open(replace_input, 'r') as file:
+        total_lines = sum(1 for _ in file)
+    # we're just gonna brute force it
+    with fileinput.FileInput(replace_input, inplace=True, backup=".bak") as file:
+        # progress bar!
+        with tqdm(total=total_lines, desc="Replacing") as pbar:
+            for line in file:
+                for class_old, class_new in replace_dict.items():
+                    if class_old != '$NOTFOUND$' and class_new != '$NOTFOUND$':
+                        line = line.replace(class_old, class_new)
+                # write the modified line to file
+                print(line, end='')
+                pbar.update(1)
+
+
 def main():
     parse_diff()
-    if diffoutput:
+    if diff_output:
         diff()
+    if args.replace:
+        find_and_replace()
 
 # driver code
 if __name__ == "__main__":
