@@ -1,0 +1,69 @@
+$version: '6.3.0';
+
+/* ### Server Size for Clearvision v#{$version} by Nyx ### */
+
+// SELECTORS
+@import '../lib/selectors/selectorPlaceholders';
+
+:root {
+	--server-size: 88px;
+}
+/*UNREAD/SELECTED INDICATOR*/
+/*wrapper*/
+%guild %guildPillWrapper {
+	height: var(--server-size);
+}
+/*actual color*/
+%guild %guildPillItem {
+	width: calc(var(--server-size)*.25) !important;
+	height: calc(var(--server-size)*.25) !important;
+	margin-left: calc(var(--server-size)*-.125);
+}
+/*currently selected*/
+%guild %guildPillItem[style*="height: 40px"] {
+	height: calc(var(--server-size)*5/6) !important;
+}
+/*FOLDER/SERVER*/
+/*folder bg*/
+%guildExpandedFolderBackground {
+	width: calc(var(--server-size));
+	left: calc(var(--server-size)*.25);
+}
+/*actual server icon*/
+/*first class is outer wrapper, second is svg image*/
+%guild %guildSVGWrapper,
+%guild %guildSVG {
+	height: calc(var(--server-size));
+	width: var(--server-size);
+}
+/*height of overall containers*/
+%themeDark %guilds > div[style*="height: 56px;"] {
+	height: calc(var(--server-size)*7/6) !important;
+}
+/*overall guilds container, individual items, and the wrapper*/
+/*oh and the unread indicator*/
+%guildUnreadMentionsTop, %guildUnreadMentionsBottom,
+%guildsWrapper,
+%guild,
+%guildFolderWrapper {
+	width: calc(var(--server-size)*1.5);
+}
+/*the folder bg height lol*/
+%guildFolderWrapper > ul[style*="height: "] {
+	height: auto !important;
+}
+/*margins between servers*/
+%guild {
+	margin: 0 0 calc(var(--server-size)/6);
+}
+/*ping icon*/
+%guild %numberBadge,
+%guild %numberBadgeBase {
+	font-size: calc(var(--server-size)/4);
+	width: calc(var(--server-size)/3) !important;
+	height: calc(var(--server-size)/3);
+}
+/*keep it round because border-radius 8 only works when the width is 16 lol*/
+%guild %numberBadgeBaseShapeRound {
+	border-radius: 100%;
+}

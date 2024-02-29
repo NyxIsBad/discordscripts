@@ -1,0 +1,130 @@
+$version: '6.3.0';
+
+/* ### Gradients for Clearvision v#{$version} by Nyx ### */
+
+// SELECTORS
+@import '../lib/selectors/selectorPlaceholders';
+
+:root {
+	/* Gradients */
+  --gradient-color1: var(--main-color); /* primary color [default: var(--main-color) */
+  --gradient-color2: var(--hover-color); /* secondary color [default: var(--hover-color) */
+  --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
+}
+
+// -- BGs --
+// BD
+.bd-toast,
+// Channels
+%channelLink:after,
+%channelContainerDrag:after,
+%channelContainerDrag:before,
+%channelContainerUserOver:after,
+// Indicators
+%channelsUnreadIndicator:after,
+%channelsMentionIndicator:after,
+// DMs 
+%privateChannels %privateChannel %privateChannelInteractive%privateChannelInteractiveSelected:after,
+// Special Channels
+%membersChannelButton,
+// BARS
+// New Unreads bar
+%barBrand,
+// New Message Bar
+%newMessagesBar:before,
+// Jump to Present
+%jumpToPresentBar:hover,
+// HasMore
+%messages %hasMore:hover,
+// Text Autocomplete
+%autocompleteSelectorSelected[aria-selected='true'] %autocompleteBase,
+%autocompleteSelectorSelected[aria-disabled='false'] %autocompleteBase:hover,
+// Badges
+%numberBadge,
+%textBadge,
+// Buttons
+%buttonFilled%buttonColorBrand,
+%buttonFilled%buttonColorGreen,
+%buttonFilled%buttonColorBrandNew,
+%buttonFilled%buttonColorBrandNew2,
+%buttonFilled%buttonCallInvite,
+%buttonFilled%buttonColorPrimary,
+// Sliders 
+%slider %sliderBarFill,
+// Tooltip
+%themeDark %tooltip%tooltipBrand,
+// Servers
+%guildPillItem,
+%guildBadge%guildBadgeParticipating,
+%circleIconButton%circleIconButtonSelected,
+// Server Settings
+%guildSettingsRoleDefaultPermissions,
+// Search Bar
+%chatSearch%chatSearchFilter,
+%chatSearch%chatSearchAnswer,
+// Upload attachment
+%fileProgressBar,
+// Media player
+%playerMediaBarGrabber,
+%playerMediaBarProgress,
+%playerMediaBarProgress:before,
+%playerMediaBarProgress:after,
+%playerMediaBarBubble,
+// Soundboard
+%soundboard %soundboardSound,
+%soundboard %soundboardGuildSelected,
+// App directory 
+%directorySearchCategoryActive,
+// Forums
+%forumUploadIcon,
+// Gif Picker
+%gifPickerContent %gifPickerCategoryFadeBlurple:after,
+%gifPickerContent %gifPickerResult[style*='background-color:'],
+// Group invite
+%groupInvitePopoutSearchTag,
+// Server deletion
+%serverDeleteReasonOption,
+// Friend request button
+%friendRequestsButton,
+// Sidebar
+%tabBarItem%tabBarItemSelected:after,
+// Dropdown for customizechannels
+%customizeChannelsSearchOption,
+//Mention Wrapper
+//%mentionWrapper,
+// Preview Server
+%previewServerIconContainer {
+  background: linear-gradient(var(--gradient-direction),var(--gradient-color1),var(--gradient-color2)) !important;
+}
+
+// -- TEXT --
+// Members list
+%members %membersGroup:not([style*="color: rgb"],#MemberCount h3) span,
+// Category names
+%channelsSidebar %categoryContainerDefault %categoryWrapper %categoryName %categoryText,
+// DMs
+%privateChannels %privateChannelsHeader %privateChannelsHeaderText,
+//Settings
+%settingsHeaderText {
+  background-image: linear-gradient(var(--gradient-direction),var(--gradient-color1),var(--gradient-color2)) !important;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+// -- Spines --
+%members %membersGroup:not([style*="color: rgb"]),
+%channelsSidebar %categoryContainerDefault %categoryWrapper %categoryName,
+%privateChannels %privateChannelsHeader,
+%settingsSidebar %settingsHeader {
+  &:before {
+    background: linear-gradient(to left,var(--gradient-color1) 50%,transparent) !important;
+  }
+  &:after {
+    background: linear-gradient(to right,var(--gradient-color1) 50%,transparent) !important;
+  }
+}
+
+// Remove borders on pings
+%numberBadge,
+%textBadge {
+  box-shadow: none !important;
+}
