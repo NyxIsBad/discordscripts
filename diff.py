@@ -15,6 +15,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', default='classesjs.diff', help='Input filename. Default: classesjs.diff')
 parser.add_argument('--output', default='classes_mapping.csv', help='Output filename. Default: classes_mapping.csv')
+parser.add_argument('--line_isolating', default=False, help='Use without --word-diff, requires histogram or patience. Default: False')
 parser.add_argument('--diff_output', default=None, help='Generate diff file. Input a file name. Default: None')
 parser.add_argument('--syndi', default=False, help='Decide whether or not to format the diff_output as a SyndiShanX input file. Default: False')
 parser.add_argument('--replace', default=None, help='Auto Update a file. Input a file name. Default: None')
@@ -27,6 +28,7 @@ diff_input = args.input
 csv_output = args.output
 diff_output = args.diff_output
 flag_syndi = args.syndi
+flag_line = args.line_isolating
 replace_input = args.replace
 
 # Function relevant vars
@@ -35,7 +37,8 @@ delimiter = ','
 # Match all inside brackets
 bracket_isolating = r'{([^}]*)}'
 # Fetch elements of field
-info_isolating = r'^(-|\+)\s*(.*):\s*"(.*)"$'
+line_isolating = r'^(-|\+)\s*(.*):\s*"(.*)"$'
+word_isolating = r'~\n\s*(.*):\s*\n-"(.*)",\s*\n\+"(.*)",\s*\n'
 
 # ----------------- FUNCTIONS -----------------
 # load a csv file into a pandas dataframe
@@ -61,19 +64,29 @@ def parse_diff():
             # Declare vars, note that dicts reset every match
             old_dict = {}
             new_dict = {}
-            # Split each match by commas
-            fields = [field.strip() for field in match.split(',')]
-            # Extract id and class for each field
-            for field in fields:
-                if field:
-                    matchobj = re.match(info_isolating,field)
-                    # ensure that our match is complete
-                    if matchobj and len(matchobj.groups()) == 3:
-                        prefix, class_id, class_selector = matchobj.groups()
-                        if prefix == "-":
-                            old_dict[class_id] = class_selector
-                        elif prefix == "+":
-                            new_dict[class_id] = class_selector
+            
+            # line isolating 
+            if flag_line:
+                # Split each match by commas
+                fields = [field.strip() for field in match.split(',')]
+                # Extract id and class for each field
+                for field in fields:
+                    if field:
+                        matchobj = re.match(line_isolating,field)
+                        # ensure that our match is complete
+                        if matchobj and len(matchobj.groups()) == 3:
+                            prefix, class_id, class_selector = matchobj.groups()
+                            if prefix == "-":
+                                old_dict[class_id] = class_selector
+                            elif prefix == "+":
+                                new_dict[class_id] = class_selector
+            # word isolating (optimal)
+            else: 
+                matches = re.findall(word_isolating, match)
+                for match in matches:
+                    class_id, old_selector, new_selector = match
+                    old_dict[class_id] = old_selector
+                    new_dict[class_id] = new_selector
             # write the differences to the csv
             for class_id in old_dict:
                 # we need to split the class_selector according to " "
