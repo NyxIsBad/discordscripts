@@ -1,9 +1,22 @@
+# regex and csv handling
 import csv
 import re
+# cl arguments
+import argparse
 
-# Define the input and output filenames
-diff_input = 'classesjs.diff'
-csv_output = 'classes_mapping.csv'
+# Create argument parser
+parser = argparse.ArgumentParser()
+parser.add_argument('--input', default='classesjs.diff', help='Input filename')
+parser.add_argument('--output', default='classes_mapping.csv', help='Output filename')
+parser.add_argument('--diff', type=bool, default=False, help='Generate diff file for SyndiShanX\'s diff tool. Default is False.')
+
+# Parse command line arguments
+args = parser.parse_args()
+
+# Get input and output filenames from command line arguments
+diff_input = args.input
+csv_output = args.output
+diff_mode = args.diff
 
 # Match all inside brackets
 bracket_isolating = r'{([^}]*)}'
@@ -55,7 +68,7 @@ with open(csv_output, 'w', newline='') as csvfile:
                 for i in range(len(old_selector_arr)):
                     writer.writerow([old_selector_arr[i], '$NOTFOUND$', class_id])
         for class_id in new_dict:
+            new_selector_arr = new_dict[class_id].split(" ")
             if class_id not in old_dict:
-                # similarly with col1 with new classes
-                writer.writerow(['$NOTFOUND$', new_dict[class_id], class_id])
-        break
+                for i in range(len(new_selector_arr)):
+                    writer.writerow(['$NOTFOUND$', new_selector_arr[i], class_id])
