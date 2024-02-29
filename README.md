@@ -1,5 +1,5 @@
 # Discord Scripts
-The repo is currently serving the diff between the `0e49fdb` and `80a7115` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
+The repo is currently serving the diff between the `00541a0` and `80a7115` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
 
 - `cit.py` - check if a list of newline separated classes is in the .css files
     - returns fail.txt
