@@ -3,12 +3,11 @@ import csv
 import re
 # pandas for csv handling
 import pandas as pd
-# tqdm for progress bar
-from tqdm import tqdm
 # fileinput for find and replace
 import fileinput
 # cl arguments
 import argparse
+import time
 
 # ----------------- GLOBAL VARS -----------------
 # Create argument parser
@@ -126,29 +125,29 @@ def diff():
 def find_and_replace():
     # load csv to df
     df = load_csv(csv_output)
-    replace_dict = dict(zip(df['class_old'], df['class_new']))
-    # count lines for progress bar lol
-    with open(replace_input, 'r') as file:
-        total_lines = sum(1 for _ in file)
+    # remove not found
+    df = df[(df['class_old'] != '$NOTFOUND$') & (df['class_new'] != '$NOTFOUND$')]
+    replace_dict = dict(zip(df['class_old'], df['class_new'])).items()
     # we're just gonna brute force it
     with fileinput.FileInput(replace_input, inplace=True, backup=".bak") as file:
-        # progress bar!
-        with tqdm(total=total_lines, desc="Replacing") as pbar:
-            for line in file:
-                for class_old, class_new in replace_dict.items():
-                    if class_old != '$NOTFOUND$' and class_new != '$NOTFOUND$':
-                        line = line.replace(class_old, class_new)
-                # write the modified line to file
-                print(line, end='')
-                pbar.update(1)
+        for line in file:
+            for class_old, class_new in replace_dict:
+                line = line.replace(class_old, class_new)
+            # write the modified line to file
+            print(line, end='')
 
 
 def main():
+    start_time = time.time()
     parse_diff()
     if diff_output:
         diff()
     if args.replace:
         find_and_replace()
+
+    end_time = time.time()
+    runtime = end_time - start_time
+    print("Runtime:", runtime, "seconds")
 
 # driver code
 if __name__ == "__main__":

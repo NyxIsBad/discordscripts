@@ -1,5 +1,5 @@
 # Discord Scripts
-The repo is currently serving the diff between the `00541a0` and `80a7115` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
+The repo is currently serving the diff between the `00541a0` and `0990f1a` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
 
 - `cit.py` - check if a list of newline separated classes is in the .css files
     - returns fail.txt
@@ -8,7 +8,7 @@ The repo is currently serving the diff between the `00541a0` and `80a7115` commi
 - `diff.py` - accepts .diff file generated with `git diff commit1^..commit2 --word-diff=porcelain > classesjs.diff` OR `git diff commit1^..commit2 --diff-algorithm=histogram > classesjs.diff` of the classes.js file. Currently using the BD-Addons repo
     - You generate the diff file, then do some basic beginner editing with notepad++, mark classes.js stuff, then search > bookmark > remove non bookmarked lines
     - Run `python diff.py --help` to see help
-    - Requires pandas, tqdm, psutil (last 2 are for debugging reasons)
+    - Requires pandas
 
 Regex Patterns:
 `\{(.*?)\}` -> for removing stuff in selectorplaceholders
