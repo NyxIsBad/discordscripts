@@ -1,6 +1,8 @@
 # Discord Scripts
 The repo is currently serving the diff between the `00541a0` and `0990f1a` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
 
+SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style
+
 - `cit.py` - check if a list of newline separated classes is in the .css files
     - returns fail.txt
 - `it.py` - check if a list of newline separated classes are in the theme file 
@@ -14,8 +16,7 @@ The repo is currently serving the diff between the `00541a0` and `0990f1a` commi
     git diff commit1..commit2 --diff-algorithm=histogram ./DiscordClasses/classes.js > classesjs.diff 
     ```
     of the classes.js file. Currently using the BD-Addons repo
-    - You generate the diff file, then do some basic beginner editing with notepad++, mark classes.js stuff, then search > bookmark > remove non bookmarked lines
-    - Run `python diff.py --help` to see help
+    - Run `python diff.py --help` to see command flags. Syndi output requires diff output first
     - Requires pandas
 
 Regex Patterns:
