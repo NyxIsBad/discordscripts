@@ -2,6 +2,5 @@
 .scopeTimes__83c10
 .cardWrapper_bc8d2a
 .resultsList_ccad0b
-.channelIcon__9cdc6
 .cardHeader__62148
 .benefitsContainer_f75168

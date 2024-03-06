@@ -11,7 +11,7 @@ da = dp.split()
 #paths.remove('C:/Users/Nyx/Desktop/ClearVision-v6/src\\members\\tags.scss')
 
 fail = []
-file = Path('./test/main.css')
+file = Path('../test/main.css')
 
 for cl in da:
     cflag = False
