@@ -1,5 +1,5 @@
 # Discord Scripts
-The repo is currently serving the diff between the `00541a0` and `0990f1a` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
+The repo is currently serving the diff between the `00541a0` and `afa59c9` commits from Sarah's [BD Addons](https://github.com/ItMeSarah/BD-Addons/commits/main/DiscordClasses/classes.js)
 
 SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style
 
