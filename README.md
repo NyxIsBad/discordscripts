@@ -1,7 +1,7 @@
 # Discord Scripts
 The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js)
 
-SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style. Note that the script is really flawed and misses a lot of class rerolls! It prioritizes accuracy over completeness, so it will not catch everything.
+SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style. Note that the script is really flawed and misses a lot of class rerolls! It prioritizes accuracy over completeness, so it will not catch everything. Consequently, I may also provide another .diff file that has critical classes that most themes might use, but this is made manually and takes a while to sort out.
 
 - `cit.py` - check if a list of newline separated classes is in the .css files
     - returns fail.txt
