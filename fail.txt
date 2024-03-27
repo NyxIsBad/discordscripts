@@ -6,6 +6,7 @@
 .ui-tab-bar-item.selected
 .ui-tab-bar-separator
 .gameActivityToggleAdded_Yd-YxC
+.slash_c0ba36
 .react-datepicker__day--weekend
 .react-datepicker__day--mon
 .react-datepicker__day--tue
@@ -14,3 +15,5 @@
 .react-datepicker__day--fri
 .react-datepicker__day--sat
 .react-datepicker__day--sun
+.borderRect__8ec00
+this
