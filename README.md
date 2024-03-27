@@ -19,9 +19,13 @@ SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Class
     - Run `python diff.py --help` to see command flags. Syndi output requires diff output first
     - Requires pandas
 
-Regex Patterns:
+# Useful Patterns:
 `\{(.*?)\}` -> for removing stuff in selectorplaceholders
 
 `[^\x00-\x7F]+` -> removing non ascii chars
 
 `e.exports = \{(.*?)\}` -> classes.js stuff
+
+`\r\n\r\n \..*` -> classescss.diff stuff
+
+`git diff --word-diff=porcelain --no-index ./sources/14.css ./sources/15reroll.css > classescss.diff`

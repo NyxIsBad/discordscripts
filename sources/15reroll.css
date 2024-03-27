@@ -6651,7 +6651,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .separator__70f9e:after {
-    content: ""
+    content: "â€¢"
 }
 
 .divider__14bb6 {
@@ -14411,12 +14411,12 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .markup_a7e664.inlineFormat__5222c li:before,.markup_a7e664 .inlineFormat__5222c li:before {
-    content: "";
+    content: "â€¢";
     padding-right: 4px
 }
 
 .markup_a7e664.inlineFormat__5222c li li:before,.markup_a7e664 .inlineFormat__5222c li li:before {
-    content: "";
+    content: "â—‹";
     font-size: .625rem;
     padding: 0 4px 4px;
     line-height: 1rem
@@ -28433,7 +28433,7 @@ button.button_ae40a4.disabled__1dc58,span.button_ae40a4.disabled__1dc58 {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    content: ""
+    content: "Ã—"
 }
 
 .react-datepicker__today-button {
@@ -55929,7 +55929,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .languageItem_f7063a:before {
-    content: "";
+    content: "â€¢";
     margin-right: 8px;
     display: inline-block;
     width: 1ch;
@@ -64081,7 +64081,7 @@ html .progress__00e29 {
 }
 
 .detailsText__4bc99>:not(:first-child):before {
-    content: "";
+    content: "â€¢";
     margin: 0 .5rem
 }
 
@@ -99357,11 +99357,11 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
 }
 
 .notes__00774:before {
-    content: ""
+    content: "â€œ"
 }
 
 .notes__00774:after {
-    content: ""
+    content: "â€"
 }
 
 .theme-dark .label_d49d6d {
@@ -126732,7 +126732,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .truncatedReply__9d959:after {
-    content: ""
+    content: "â€¦"
 }
 
 .parentContainer_c4b2df {
@@ -155166,30 +155166,30 @@ div.nagbar_c731ff {
 }
 
 :root:lang(ko) {
-    --font-primary: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-display: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-headline: 'ABC Ginto Nord', 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-primary: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'ABC Ginto Nord', 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace
 }
 
 :root:lang(ja) {
-    --font-primary: 'gg sans', 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-display: 'gg sans', 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-headline: 'ABC Ginto Nord', 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-primary: 'gg sans', 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'gg sans', 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'ABC Ginto Nord', 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace
 }
 
 :root:lang(zh-CN) {
-    --font-primary: 'gg sans', 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-display: 'gg sans', 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-headline: 'ABC Ginto Nord', 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-primary: 'gg sans', 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'gg sans', 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'ABC Ginto Nord', 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace
 }
 
 :root:lang(zh-TW) {
-    --font-primary: 'gg sans', 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-display: 'gg sans', 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-headline: 'ABC Ginto Nord', 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-primary: 'gg sans', 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'gg sans', 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'ABC Ginto Nord', 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace
 }
 
