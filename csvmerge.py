@@ -34,21 +34,21 @@ def combine_csv(file1, file2, output_file):
     print("Combined CSV file generated successfully.")
 
 def combine_csv_to_diff(file1, file2, output_file):
-    combined_entries = []
+    combined_entries = set()
 
     # Read and combine entries from file1
     with open(file1, 'r') as f1:
         reader = csv.reader(f1)
         next(reader)  # Skip header
         for row in reader:
-            combined_entries.append((clean_entry(row[0]), clean_entry(row[1])))
+            combined_entries.add((clean_entry(row[0]), clean_entry(row[1])))
 
     # Read and combine entries from file2
     with open(file2, 'r') as f2:
         reader = csv.reader(f2)
         next(reader)  # Skip header
         for row in reader:
-            combined_entries.append((clean_entry(row[0]), clean_entry(row[1])))
+            combined_entries.add((clean_entry(row[0]), clean_entry(row[1])))
 
     # Write combined entries to the output .diff file
     with open(output_file, 'w') as outfile:
