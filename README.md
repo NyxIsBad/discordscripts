@@ -1,6 +1,6 @@
 # Discord Scripts & Use
 The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .csv files, or you can call 
-```bash
+```
 python replace.py [-f file_path | -d dir_path]
 ``` 
 Note that file replacement and directory replacement are mutually exclusive, and that directory replacement is recursive, so use it carefully. It's still a python script so it might be a little slow.
