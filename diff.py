@@ -13,7 +13,7 @@ import time
 # Create argument parser
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', default='classesjs.diff', help='Input filename. Default: classesjs.diff')
-parser.add_argument('--output', default='classes_mapping.csv', help='Output filename. Default: classes_mapping.csv')
+parser.add_argument('--output', default='classes_mapping_script.csv', help='Output filename. Default: classes_mapping_script.csv')
 parser.add_argument('--line_isolating', default=False, help='Use without --word-diff, requires histogram or patience. Default: False')
 parser.add_argument('--diff_output', default=None, help='Generate diff file. Input a file name. Default: None')
 parser.add_argument('--syndi', default=False, help='Decide whether or not to format the diff_output as a SyndiShanX input file. Default: False')

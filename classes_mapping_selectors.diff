@@ -865,8 +865,8 @@
 -.backButton__5b790
 +.backButton__1d36e
 -.leftArrow__1d2d5
--.rightArrow__0633c
 +.leftArrow__06d17
+-.rightArrow__0633c
 +.rightArrow_ca65a9
 -.inactiveArrow_e0ef05
 +.inactiveArrow__86563
@@ -1083,8 +1083,8 @@
 -.cancelButton_f76160
 +.cancelButton_ae4b5b
 -.downloadButton__57092
--.cancelButton_f76160
 +.downloadButton__3fb6d
+-.cancelButton_f76160
 +.cancelButton_ae4b5b
 -.codeActions__43b2e
 +.codeActions__13d69
@@ -1949,10 +1949,10 @@
 -.stepperContainer__053f4
 +.stepperContainer_b891a2
 -.mentionLimitContainer__0f0ff
--.keywordListContainer_fdf41c
--.actionContainer__51bd9
 +.mentionLimitContainer_bb7659
+-.keywordListContainer_fdf41c
 +.keywordListContainer__0f5a8
+-.actionContainer__51bd9
 +.actionContainer_e638f2
 -.collapseable__71e46
 +.collapseable_a59844
@@ -2101,8 +2101,8 @@
 -.viewServerButton__1ce42
 +.viewServerButton__457ab
 -.activityUserPopoutV2__32328
--.activityProfileV2__4de28
 +.activityUserPopoutV2__89098
+-.activityProfileV2__4de28
 +.activityProfileV2_f5335f
 -.headerText__7d203
 +.headerText_c0138d
@@ -2173,10 +2173,10 @@
 -.upsellOverlay__688e8
 +.upsellOverlay__988e7
 -.container__6968f
--.container__9c82e
--.container__9f90c
 +.container_d5dec4
+-.container__9c82e
 +.container__7d3e2
+-.container__9f90c
 +.container__5a2c3
 -.circle__7dd22
 +.circle_cbbd13
@@ -2191,8 +2191,8 @@
 -.connectContainer__8050b
 +.connectContainer_e331e3
 -.accountButtonInner__80e3a
--.accountBtnInner_fe9b67
 +.accountButtonInner__00bdd
+-.accountBtnInner_fe9b67
 +.accountBtnInner__1470b
 -.giftCard__30972
 +.giftCard__4b868
@@ -2205,8 +2205,8 @@
 -.boosterRecognitionCard__5fc19
 +.boosterRecognitionCard_fc16be
 -.noItemsIcon_b1e42b
--.noItemsIcon__38ca2
 +.noItemsIcon__299fb
+-.noItemsIcon__38ca2
 +.noItemsIcon_ead6f9
 -.detailsBlock__1191c
 +.detailsBlock__319f5
@@ -2215,8 +2215,8 @@
 -.defaultIndicator__855a2
 +.defaultIndicator_b89fc1
 -.description__75831
--.descriptionWrapper__0d577
 +.description__51810
+-.descriptionWrapper__0d577
 +.descriptionWrapper__75cd5
 -.paymentPane__9cf01
 +.paymentPane__541d7
