@@ -4,8 +4,6 @@ The repo is currently serving the diff between the `6b9dd01` and `7583133` commi
 # Structure: 
 - `classes_mapping.csv contains` csv data that's for other programs to interpret
 - `classes_mapping.diff contains` the above data in .diff format
-- `classes_mapping_selectors.diff` contains diff data that may include manually found class changes. It's important to take the union of this and `classes_mapping.diff`, because the script is in no way complete (it catches about 90% of changes but can easily miss some of the most critical classes due to uncertainty about class mappings - guaranteed correctness is more important than completeness)
-- Almost all of the other files are completely random scripts (or related artifacts) developed for day to day maintenance of the Clearvision Theme, which I'm the developer of. You can ignore those.
 
 # Credits!
 - Massive credit to sarah for keeping a history of the discord js file so this is possible. It's probably the one file that can produce a reasonable diff
@@ -44,7 +42,7 @@ The repo is currently serving the diff between the `6b9dd01` and `7583133` commi
 
 `python diff.py --diff classes_mapping_script.diff`
 `python selectorscsv.py classes_mapping_selectors.diff classes_mapping_selectors.csv`
-`python csvmerge.py classes_mapping_selectors.csv classes_mapping_script.csv classes_mapping.csv`
+`python csvmerge.py classes_mapping_selectors.csv classes_mapping_script.csv classes_mapping.csv classes_mapping.diff`
 
 # Procedure:
 - git pull sarah's js file
