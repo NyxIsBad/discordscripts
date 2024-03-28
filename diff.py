@@ -37,7 +37,7 @@ delimiter = ','
 bracket_isolating = r'{([^}]*)}'
 # Fetch elements of field
 line_isolating = r'^(-|\+)\s*(.*):\s*"(.*)"$'
-word_isolating = r'~\n\s*(.*):\s*\n-"(.*)",\s*\n\+"(.*)",\s*\n'
+word_isolating = r'~\n\s*(.*):\s*\n-"(.*)",?\s*\n\+"(.*)",?\s*\n'
 
 # ----------------- FUNCTIONS -----------------
 # load a csv file into a pandas dataframe

@@ -40,10 +40,16 @@ The repo is currently serving the diff between the `6b9dd01` and `7583133` commi
 
 `git diff --word-diff=porcelain --no-index ./sources/14.css ./sources/15reroll.css > classescss.diff`
 
+`git diff --word-diff=porcelain selectorPlaceholders.scss > classescss.diff`
+
+`python diff.py --diff classes_mapping_script.diff`
+`python selectorscsv.py classes_mapping_selectors.diff classes_mapping_selectors.csv`
+`python csvmerge.py classes_mapping_selectors.csv classes_mapping_script.csv classes_mapping.csv`
+
 # Procedure:
 - git pull sarah's js file
 - generate a diff
 - run diff.py on it to generate a .csv and .diff file
-- replace selectors and seek manuals. diff that file and clean it up with regex 
+- replace selectors and seek manuals. word diff w/ porcelain that file and clean it up with regex 
 - run selectorscsv.py to create the csv for that one
 - run csvmerge.py to merge the csvs.
