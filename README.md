@@ -8,9 +8,11 @@ The most complete reroll mappings that I can provide
 - `classes_mapping.csv` contains csv data that's for other programs to interpret
 - `classes_mapping.diff` contains the above data in .diff format
 - `classes_mapping.txt` contains the above data in a format suitable for syndishanx's website
+
 Script compiled mappings
 - `classes_mapping_script.csv`
 - `classes_mapping_script.diff`
+
 Manually compiled mappings 
 - `classes_mapping_selectors.csv`
 - `classes_mapping_selectors.diff`
