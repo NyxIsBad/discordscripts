@@ -1,17 +1,26 @@
 # Discord Scripts & Use
 The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .diff files, or you can call replace.py.
 
-# Structure: 
+- Note that the script can be flawed and miss class rerolls! It prioritizes accuracy over completeness, so it will not catch everything. Consequently, I provide another critical classes that most themes might use, but this is made somewhat manually and may take a while to be more complete. Then I merge the two together. I have listed the 3 final result files below:
+
+# Results
+The most complete reroll mappings that I can provide 
 - `classes_mapping.csv` contains csv data that's for other programs to interpret
 - `classes_mapping.diff` contains the above data in .diff format
 - `classes_mapping.txt` contains the above data in a format suitable for syndishanx's website
+Script compiled mappings
+- `classes_mapping_script.csv`
+- `classes_mapping_script.diff`
+Manually compiled mappings 
+- `classes_mapping_selectors.csv`
+- `classes_mapping_selectors.diff`
 
 # Credits!
 - Massive credit to sarah for keeping a history of the discord js file so this is possible. It's probably the one file that can produce a reasonable diff
 - Ames has made a script to implement the actual `.diff`s  [here](https://github.com/accrazed/far). Please go check it out, it's incredibly useful
-- SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a slightly different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style. Note that the script can be flawed and miss class rerolls! It prioritizes accuracy over completeness, so it will not catch everything. Consequently, I may also provide another .diff file that has critical classes that most themes might use, but this is made manually and takes a while to sort out.
+- SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a slightly different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style. 
 
-# Docs
+# Old Docs (remember this isn't just a repo for rerolls)
 - `cit.py` - check if a list of newline separated classes is in the .css files
     - returns fail.txt
 - `it.py` - check if a list of newline separated classes are in the theme file 
