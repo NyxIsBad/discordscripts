@@ -1,5 +1,9 @@
 # Discord Scripts & Use
-The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .diff files, or you can call `python replace.py [-f file_path] | [-d dir_path]`. SyndiShanX's website also uses my list, so you can use that as well.
+The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .csv files, or you can call 
+```python
+python replace.py [-f file_path] | [-d dir_path]
+``` 
+SyndiShanX's website also uses my list, so you can use that as well.
 
 - Note that the script can be flawed and miss class rerolls! It prioritizes accuracy over completeness, so it will not catch everything. Consequently, I provide another critical classes that most themes might use, but this is made somewhat manually and may take a while to be more complete. Then I merge the two together. I have listed the 3 final result files below:
 
