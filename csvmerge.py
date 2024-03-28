@@ -57,14 +57,21 @@ def combine_csv_to_diff(file1, file2, output_file):
             outfile.write("+" + entry[1] + "\n")
 
     print("Combined .diff file generated successfully.")
+    return combined_entries
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: python script.py file1.csv file2.csv output.csv output.diff")
+    if len(sys.argv) < 5:
+        print("Usage: python script.py file1.csv file2.csv output.csv output.diff OPTIONAL:output.txt")
         sys.exit(1)
     file1 = sys.argv[1]
     file2 = sys.argv[2]
     csv_output = sys.argv[3]
     diff_output = sys.argv[4]
+    syndi_output = sys.argv[5] if len(sys.argv) == 6 else None
     combine_csv(file1, file2, csv_output)
-    combine_csv_to_diff(file1, file2, diff_output)
+    entries = combine_csv_to_diff(file1, file2, diff_output)
+    if syndi_output:
+        with open(syndi_output, 'w') as f:
+            for entry in entries:
+                f.write(entry[0] + "\n" + entry[1] + "\n")
+        print("Syndi output file generated successfully.")

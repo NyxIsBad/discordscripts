@@ -2,8 +2,9 @@
 The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .diff files, or you can call replace.py.
 
 # Structure: 
-- `classes_mapping.csv contains` csv data that's for other programs to interpret
-- `classes_mapping.diff contains` the above data in .diff format
+- `classes_mapping.csv` contains csv data that's for other programs to interpret
+- `classes_mapping.diff` contains the above data in .diff format
+- `classes_mapping.txt` contains the above data in a format suitable for syndishanx's website
 
 # Credits!
 - Massive credit to sarah for keeping a history of the discord js file so this is possible. It's probably the one file that can produce a reasonable diff
@@ -42,7 +43,7 @@ The repo is currently serving the diff between the `6b9dd01` and `7583133` commi
 
 `python diff.py --diff classes_mapping_script.diff`
 `python selectorscsv.py classes_mapping_selectors.diff classes_mapping_selectors.csv`
-`python csvmerge.py classes_mapping_selectors.csv classes_mapping_script.csv classes_mapping.csv classes_mapping.diff`
+`python csvmerge.py classes_mapping_selectors.csv classes_mapping_script.csv classes_mapping.csv classes_mapping.diff classes_mapping.txt`
 
 # Procedure:
 - git pull sarah's js file
