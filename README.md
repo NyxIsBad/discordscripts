@@ -1,5 +1,5 @@
 # Discord Scripts & Use
-The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .diff files, or you can call diff.py with the replace flag, which accepts a file and replaces classes based on a classesjs input
+The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .diff files, or you can call replace.py.
 
 # Structure: 
 - `classes_mapping.csv contains` csv data that's for other programs to interpret
