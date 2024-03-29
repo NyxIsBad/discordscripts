@@ -1,12 +1,19 @@
 # Discord Scripts & Use
-The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). You can use Ames' [implementation script](https://github.com/accrazed/far) to use it with the served .csv files, or you can call 
+The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
 ```
 python replace.py [-f file_path | -d dir_path]
 ``` 
 Note that file replacement and directory replacement are mutually exclusive, and that directory replacement is recursive, so use it carefully. It's still a python script so it might be a little slow.
-SyndiShanX's website also uses my list, so you can use that as well.
 
 - Note that the script can be flawed and miss class rerolls! It prioritizes accuracy over completeness, so it will not catch everything. Consequently, I provide another critical classes that most themes might use, but this is made somewhat manually and may take a while to be more complete. Then I merge the two together. I have listed the 3 final result files below:
+
+# 3rd Party Find and Replace Scripts
+The below scripts use the same class changes as in this repo, but do replacement better or faster.
+
+- Syndishanx's [far website](https://syndishanx.github.io/Website/Update_Classes.html), easy to use w/ no prereqs and widely known
+- Ames' [golang far script](https://github.com/accrazed/far), supports directory replacement
+- Salts' [python far script](https://github.com/Saltssaumure/ClassUpdate), supports directory replacement 
+
 
 # Results
 The most complete reroll mappings that I can provide 
