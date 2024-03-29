@@ -15,6 +15,8 @@ group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-f','--file', help='Input filename path.')
 group.add_argument('-d','--directory', help='Input directory.')
 
+ignore_lst = [".git", ".vscode", "node_modules", "venv", "__pycache__"]
+
 args = parser.parse_args()
 csv_output = args.classes_mapping
 file_in = args.file if args.file != '' else None
@@ -38,15 +40,20 @@ def find_and_replace(csv_output, replace_input):
             # write the modified line to file
             print(line, end='')
 
+
 if __name__ == "__main__":
     start_time = time.time()
     print(file_in, dir_in)
     if file_in:
         find_and_replace(csv_output, file_in)
     elif dir_in:
-        for subdir, _, files in os.walk(dir_in):
+        for directory, _, files in os.walk(dir_in):
+            if any(folder in directory for folder in ignore_lst):
+                print("Ignoring: ", directory)
+                continue
             for file in files:
-                file_path = os.path.join(subdir, file)
+                file_path = os.path.join(directory, file)
                 print("Processing: ", file_path)
                 find_and_replace(csv_output, file_path)
     print(f'--- {time.time() - start_time} seconds ---')
+
