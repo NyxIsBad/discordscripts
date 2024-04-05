@@ -2,7 +2,7 @@ import glob
 import os
 
 class_file = open('classlist.txt', 'r')
-src_file = open('sources/15reroll.css','r')
+src_file = open('../sources/16.css','r')
 sp = src_file.read()
 
 dp = class_file.read()
