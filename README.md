@@ -1,5 +1,5 @@
 # Discord Scripts & Use
-The repo is currently serving the diff between the `6b9dd01` and `7583133` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
+The repo is currently serving the diff between the `6b9dd01` and `794f9d3` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
 ```
 python replace.py [-f file_path | -d dir_path]
 ``` 
