@@ -1,9 +1,13 @@
 # Discord Scripts & Use
-The repo is currently serving the diff between the `6b9dd01` and `794f9d3` commits from Sarah's [BD Addons](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
+The repo is currently serving the diff between the 
+
+`6b9dd01` (2024-03-26) and `794f9d3` (2024-04-14)
+
+commits from Sarah's [Class Changes](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
 ```
 python replace.py [-f file_path | -d dir_path]
 ``` 
-Note that file replacement and directory replacement are mutually exclusive, and that directory replacement is recursive, so use it carefully. It's still a python script so it might be a little slow.
+Note that file replacement and directory replacement are mutually exclusive, and that directory replacement is recursive, so use it carefully. It's still a python script so it might be a little slow (see the other FAR scripts below!).
 
 - Note that the script can be flawed and miss class rerolls! It prioritizes accuracy over completeness, so it will not catch everything. Consequently, I provide another critical classes that most themes might use, but this is made somewhat manually and may take a while to be more complete. Then I merge the two together. I have listed the 3 final result files below:
 
@@ -32,7 +36,7 @@ Manually compiled mappings
 # Credits!
 - Massive credit to sarah for keeping a history of the discord js file so this is possible. It's probably the one file that can produce a reasonable diff
 - Ames has made a script to implement the actual `.diff`s  [here](https://github.com/accrazed/far). Please go check it out, it's incredibly useful
-- SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a slightly different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style. 
+- SyndiShanX also has his [own scripts](https://github.com/SyndiShanX/Update-Classes) which produce very similar results to mine but use a slightly different methodology. In fact I have added a CLI flag to my script that generates results in syndishanx's style. Also, he hosts a great website that allows you to do FAR without downloading a script.
 
 # Old Docs (remember this isn't just a repo for rerolls)
 - `cit.py` - check if a list of newline separated classes is in the .css files
