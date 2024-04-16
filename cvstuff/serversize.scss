@@ -3,7 +3,7 @@ $version: '6.3.0';
 /* ### Server Size for Clearvision v#{$version} by Nyx ### */
 
 // SELECTORS
-@import '../lib/selectors/selectorPlaceholders';
+@import '../../lib/selectors/selectorPlaceholders';
 
 :root {
 	--server-size: 88px;
