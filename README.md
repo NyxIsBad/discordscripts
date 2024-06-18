@@ -1,7 +1,7 @@
 # Discord Scripts & Use
 The repo is currently serving the diff between the 
 
-`6b9dd01` (2024-03-26) and `794f9d3` (2024-04-14)
+`6b9dd01` (2024-03-26) and `07fe1e3` (2024-04-14)
 
 commits from Sarah's [Class Changes](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
 ```
@@ -63,6 +63,9 @@ Manually compiled mappings
 `e.exports = \{(.*?)\}` -> classes.js stuff
 
 `\r\n\r\n \..*` -> classescss.diff stuff
+`\n[ ]+\n~` -> classescss.diff stuff
+
+`git diff 531337f..f2fb400 --word-diff=porcelain ./selectorPlaceholders.scss > selectordiff.diff` -> selector diff
 
 `git diff --word-diff=porcelain --no-index ./sources/14.css ./sources/15reroll.css > classescss.diff`
 

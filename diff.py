@@ -93,9 +93,10 @@ def parse_diff():
                 # case it's in the new dict
                 if class_id in new_dict:
                     new_selector_arr = new_dict[class_id].split(" ")
+                    # print(f"CID: {class_id} Old: {old_selector_arr}, List of new to compare to: {new_selector_arr}")
                     for i in range(len(old_selector_arr)):
                         # we compare the selectors and write the differences
-                        if old_selector_arr[i] != new_selector_arr[i]:
+                        if i < len(new_selector_arr) and old_selector_arr[i] != new_selector_arr[i]:
                             writer.writerow([old_selector_arr[i], new_selector_arr[i], class_id])
                 # case possibly deleted class
                 else:
