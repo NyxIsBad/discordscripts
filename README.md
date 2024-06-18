@@ -1,9 +1,9 @@
 # Discord Scripts & Use
 The repo is currently serving the diff between the 
 
-`6b9dd01` (2024-03-26) and `07fe1e3` (2024-04-14)
+`6b9dd01` (2024-03-26) and `886f52c` (2024-06-18)
 
-commits from Sarah's [Class Changes](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). To find and replace classes in a file, you can call 
+commits from Sarah's [Class Changes](https://github.com/itmesarah/classchanges/commits/main/discordclasses.js). Huge credit to [XYZenix](https://github.com/XYZenix) for help on completing the recent fixes. To find and replace classes in a file, you can call 
 ```
 python replace.py [-f file_path | -d dir_path]
 ``` 
