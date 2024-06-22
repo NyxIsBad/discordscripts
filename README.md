@@ -82,3 +82,6 @@ Manually compiled mappings
 - replace selectors and seek manuals. word diff w/ porcelain that file and clean it up with regex 
 - run selectorscsv.py to create the csv for that one
 - run csvmerge.py to merge the csvs.
+
+# Todo:
+- Change the script method to consume the classes.js file directly. Sort each export function in place alphabetically and then diff that instead.
