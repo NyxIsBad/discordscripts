@@ -65,7 +65,9 @@ Manually compiled mappings
 `\r\n\r\n \..*` -> classescss.diff stuff
 `\n[ ]+\n~` -> classescss.diff stuff
 
-`git diff 531337f..f2fb400 --word-diff=porcelain ./selectorPlaceholders.scss > selectordiff.diff` -> selector diff
+`git diff commit1..commit2 --word-diff=porcelain ./selectorPlaceholders.scss > selectordiff.diff` -> selector diff
+
+`git diff --no-index --word-diff=porcelain 1.js 2.js > classesjs.diff`
 
 `git diff --word-diff=porcelain --no-index ./sources/14.css ./sources/15reroll.css > classescss.diff`
 
@@ -78,6 +80,7 @@ Manually compiled mappings
 # Procedure:
 - git pull sarah's js file
 - generate a diff
+  - New steps: May have to download the 2 diff versions and run a different git diff by running alphabetize.py on each one and then diffing the 2
 - run diff.py on it to generate a .csv and .diff file
 - replace selectors and seek manuals. word diff w/ porcelain that file and clean it up with regex 
 - run selectorscsv.py to create the csv for that one
