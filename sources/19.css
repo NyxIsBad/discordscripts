@@ -22342,11 +22342,11 @@ h4.title_f54cce,h5.title_f54cce,h6.title_f54cce {
 }
 
 .notes_d11817:before {
-    content: "“"
+    content: ""
 }
 
 .notes_d11817:after {
-    content: "”"
+    content: ""
 }
 
 .theme-dark .label_d11817 {
@@ -29884,7 +29884,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    content: "Ã—"
+    content: ""
 }
 
 .react-datepicker__today-button {
@@ -32150,7 +32150,7 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .separator_ed0148:after {
-    content: "â€¢"
+    content: ""
 }
 
 .divider_b03b7f {
@@ -41325,12 +41325,12 @@ html.decorate-links .lowSaturationUnderline_c7819f {
 }
 
 .markup_f8f345.inlineFormat_f8f345 li:before,.markup_f8f345 .inlineFormat_f8f345 li:before {
-    content: "â€¢";
+    content: "";
     padding-right: 4px
 }
 
 .markup_f8f345.inlineFormat_f8f345 li li:before,.markup_f8f345 .inlineFormat_f8f345 li li:before {
-    content: "â—‹";
+    content: "";
     font-size: .625rem;
     padding: 0 4px 4px;
     line-height: 1rem
@@ -67517,39 +67517,39 @@ html.disable-forced-colors * {
 }
 
 :root:lang(ko) {
-    --font-primary: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-display: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-headline: 'ABC Ginto Nord', 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-primary: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-display: 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-headline: 'ABC Ginto Nord', 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Apple SD Gothic Neo', NanumBarunGothic, 'ë§‘ì€ ê³ ë”•', 'Malgun Gothic', Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Apple SD Gothic Neo', NanumBarunGothic, ' ', 'Malgun Gothic', Gulim, , Dotum, , 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
 }
 
 :root:lang(ja) {
-    --font-primary: 'gg sans', 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-display: 'gg sans', 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-headline: 'ABC Ginto Nord', 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-primary: 'gg sans', 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-display: 'gg sans', 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-headline: 'ABC Ginto Nord', 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', serif, 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Hiragino Sans', 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3', 'Hiragino Kaku Gothic ProN', ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Hiragino Sans', ' ProN W3', 'Hiragino Kaku Gothic ProN', , Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
 }
 
 :root:lang(zh-CN) {
-    --font-primary: 'gg sans', 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-display: 'gg sans', 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-headline: 'ABC Ginto Nord', 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-primary: 'gg sans', 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-display: 'gg sans', 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-headline: 'ABC Ginto Nord', 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', serif, 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Microsoft YaHei New', å¾®è½¯é›…é»‘, 'Microsoft Yahei', 'Microsoft JhengHei', å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Microsoft YaHei New', , 'Microsoft Yahei', 'Microsoft JhengHei', , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
 }
 
 :root:lang(zh-TW) {
-    --font-primary: 'gg sans', 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-display: 'gg sans', 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-headline: 'ABC Ginto Nord', 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-primary: 'gg sans', 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-display: 'gg sans', 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-headline: 'ABC Ginto Nord', 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', serif, 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
-    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Microsoft JhengHei', å¾®è»Ÿæ­£é»‘é«”, 'Microsoft JhengHei UI', 'Microsoft YaHei', å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Microsoft JhengHei', , 'Microsoft JhengHei UI', 'Microsoft YaHei', , , SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols'
 }
 
 :root {
@@ -89258,7 +89258,7 @@ html .progress_e5f4c6 {
 }
 
 .detailsText_a1531c>:not(:first-child):before {
-    content: "â€¢";
+    content: "";
     margin: 0 .5rem
 }
 
