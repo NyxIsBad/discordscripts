@@ -1,4 +1,7 @@
 # Discord Scripts & Use
+
+## Note: The current method of diffing is no longer working. This does not mean I will drop maint, only that I need to rewrite this before the next major reroll
+
 The repo is currently serving the diff between the 
 
 `6b9dd01` (2024-03-26) and `886f52c` (2024-06-18)
